@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resin Keychain | CrystalNest Studio</title>
+<link rel="icon" href="images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#f8f5f2;
+color:#333;
+}
+
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+header a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+margin-left:20px;
+}
+
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+padding:60px 8%;
+align-items:center;
+}
+
+.hero img{
+width:100%;
+border-radius:12px;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.price{
+font-size:24px;
+color:#c9a227;
+margin:15px 0;
+font-weight:600;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#c9a227;
+color:white;
+border-radius:25px;
+text-decoration:none;
+margin-top:15px;
+}
+
+/* reviews */
+
+/* REVIEW SECTION */
+
+.review-slider{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-top:35px;
+max-width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* REVIEW CARD */
+
+.review-card{
+background:white;
+padding:16px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.25s;
+}
+
+.review-card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.review-card h3{
+color:#FFD700;
+font-size:16px;
+margin-bottom:8px;
+}
+
+.review-card p{
+font-size:14px;
+color:#444;
+line-height:1.5;
+margin-bottom:8px;
+}
+
+.review-card span{
+font-size:13px;
+font-weight:600;
+color:#333;
+}
+
+/* REVIEW FORM */
+
+#reviewForm{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:20px;
+}
+
+#reviewForm input,
+#reviewForm select,
+#reviewForm textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ddd;
+font-family:Poppins;
+}
+
+#reviewForm textarea{
+resize:none;
+height:90px;
+}
+
+#reviewForm button{
+margin-top:5px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.review-slider{
+grid-template-columns:1fr;
+}
+
+.review-card{
+padding:14px;
+}
+
+}
+/* GALLERY */
+
+.gallery{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.gallery img{
+width:80px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:60px 8%;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.feature-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* LIST */
+
+.list{
+max-width:600px;
+margin:auto;
+text-align:left;
+margin-top:20px;
+}
+
+.list li{
+margin:10px 0;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.gallery{
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h2>CrystalNest Studio</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#products">Products</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<img id="mainImage" src="images/keychain1.jpg">
+
+<div class="gallery">
+
+<img src="images/keychain1.jpg" onclick="changeImage(this)">
+<img src="images/kaychain2.jpg" onclick="changeImage(this)">
+<img src="images/pet-poop-bag-arrangement.jpg" onclick="changeImage(this)">
+
+</div>
+
+</div>
+
+
+<div>
+
+<h1>Custom Resin Keychain</h1>
+
+<p>
+Beautiful handcrafted resin keychains customized with names,
+flowers, glitter, or photos.
+Perfect for gifts, souvenirs, and personal accessories.
+</p>
+
+<div class="price">₹199</div>
+
+<a class="btn" href="https://api.whatsapp.com/send?phone=9121011545&text=Hi I want to order Resin Keychain">
+Order on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Why You'll Love It</h2>
+
+<div class="features">
+
+<div class="feature-card">
+<h3>✨ Handmade</h3>
+<p>Each keychain is handcrafted with care and precision.</p>
+</div>
+
+<div class="feature-card">
+<h3>🎨 Custom Design</h3>
+<p>Add names, flowers, glitter or personal touches.</p>
+</div>
+
+<div class="feature-card">
+<h3>🎁 Perfect Gift</h3>
+<p>Ideal for birthdays, weddings and special events.</p>
+</div>
+
+<div class="feature-card">
+<h3>💎 Premium Resin</h3>
+<p>High quality resin for durability and shine.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>What's Included</h2>
+
+<ul class="list">
+
+<li>✔ Custom resin keychain</li>
+<li>✔ Personalized name design</li>
+<li>✔ Gift packaging</li>
+<li>✔ Durable metal keyring</li>
+
+</ul>
+
+</section>
+
+<section class="section" id="reviews">
+<h2>Customer Reviews ⭐</h2>
+
+<div class="review-slider" id="reviewSlider">
+
+</div>
+
+</section>
+<section class="section">
+<h2>Leave a Review</h2>
+
+<form id="reviewForm">
+
+<input type="text" id="reviewName" placeholder="Your Name" required>
+
+<select id="reviewStars" required>
+<option value="">Rating</option>
+<option value="⭐">⭐</option>
+<option value="⭐⭐">⭐⭐</option>
+<option value="⭐⭐⭐">⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+<option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+</select>
+<textarea id="reviewText" placeholder="Write your review..." required></textarea>
+<button class="btn" type="submit">Submit Review</button>
+
+</form>
+</section>
+
+
+<footer>
+
+<p>© 2026 CrystalNest Studio</p>
+
+</footer>
+
+
+<script>
+
+function changeImage(img){
+document.getElementById("mainImage").src = img.src
+}
+const reviewForm = document.getElementById("reviewForm");
+const reviewSlider = document.getElementById("reviewSlider");
+
+/* Load saved reviews when page opens */
+window.onload = function(){
+let savedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+savedReviews.forEach(addReviewToPage);
+};
+
+/* Submit review */
+reviewForm.addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.getElementById("reviewName").value;
+let stars = document.getElementById("reviewStars").value;
+let text = document.getElementById("reviewText").value;
+
+let review = {
+name: name,
+stars: stars,
+text: text
+};
+
+/* Save to local storage */
+let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+reviews.push(review);
+localStorage.setItem("reviews", JSON.stringify(reviews));
+
+addReviewToPage(review);
+
+reviewForm.reset();
+});
+
+/* Add review card to page */
+function addReviewToPage(review){
+
+let card = document.createElement("div");
+card.className = "review-card";
+
+card.innerHTML = `
+<h3>${review.stars}</h3>
+<p>"${review.text}"</p>
+<span>- ${review.name}</span>
+`;
+
+reviewSlider.appendChild(card);
+}
+</script>
+
+
+</body>
+</html>
